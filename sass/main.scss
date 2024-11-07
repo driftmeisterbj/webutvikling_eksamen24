@@ -1,0 +1,6 @@
+@use 'fonts' as *;
+@use 'layout' as *;
+
+body{
+    font-family: $mainFont;
+}
