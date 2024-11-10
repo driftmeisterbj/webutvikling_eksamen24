@@ -3,6 +3,7 @@
 
 body{
     font-family: $mainFont;
+    gap: 1rem;
 }
 
 #logo {
@@ -16,8 +17,8 @@ body{
     background-color: rgb(189, 189, 189);
     text-align: right;
     margin: 1rem;
-    padding: 30px;
     gap: 1rem;
+    padding: 30px;
     position: absolute;
     justify-content: end;
 }
