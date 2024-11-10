@@ -54,6 +54,7 @@
 
 #logo {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .search-area {
@@ -64,7 +65,20 @@
 
 .search-area i {
   position: absolute;
-  right: 5px;
+  right: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-area input {
+  height: 30px;
+  padding-right: 30px;
+  width: 100%;
+  border-radius: 15px;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0.5px;
 }
 
 .header-nav {
