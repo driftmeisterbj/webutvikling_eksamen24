@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  width: 100%;
 }
 #main-grid #global-header {
   grid-column: 1/2;
@@ -21,11 +20,18 @@
 body {
   font-family: "Roboto", sans-serif;
   gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #logo {
   font-size: 2rem;
   font-weight: bold;
+  text-align: center;
+}
+
+img {
+  width: 100%;
 }
 
 #banner {
@@ -33,11 +39,14 @@ body {
   flex-wrap: wrap;
   background-color: rgb(189, 189, 189);
   text-align: right;
-  margin: 1rem;
+  margin: 1rem auto;
   gap: 1rem;
   padding: 30px;
   position: relative;
-  justify-content: end;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  flex: 1;
 }
 
 #popular-products p {
@@ -70,6 +79,7 @@ body {
 
 .header-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -133,6 +143,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 5px;
+  max-width: 100%;
 }
 
 .product-btn {
@@ -144,4 +155,12 @@ body {
   border-color: #000;
   border-style: solid;
   border-width: 0.5px;
+  max-width: 100%;
+}
+
+.product-info {
+  max-width: 350px;
+  min-width: 200px;
+  width: 100%;
+  padding: 1rem;
 }/*# sourceMappingURL=main.css.map */

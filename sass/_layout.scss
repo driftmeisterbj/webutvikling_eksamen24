@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    width: 100%;
+    
 
     #global-header {
         @include grid-placement("1/2", "1/2");
@@ -21,3 +21,4 @@
         @include grid-placement("1/2", "3/4");
     }
 }
+
