@@ -30,13 +30,15 @@ body {
 #banner {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   background-color: rgb(189, 189, 189);
   text-align: right;
   margin: 1rem;
   gap: 1rem;
   padding: 30px;
   position: relative;
-  justify-content: end;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 #popular-products p {
@@ -118,18 +120,20 @@ body {
   text-decoration: none;
   background-color: rgb(247, 247, 247);
   padding: 1rem 1rem;
+  width: 170px;
 }
 
 .flex-space {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 .product-sort {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 5px;
   gap: 1rem;
@@ -146,15 +150,32 @@ body {
   border-width: 0.5px;
 }
 
-.product-info {
-  max-width: 350px;
+.product-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
   min-width: 200px;
   width: 100%;
   padding: 1rem;
 }
+.product-container img {
+  width: 100%;
+  max-width: 100%;
+}
 
 @media only screen and (max-width: 500px) {
   .product-btn {
-    padding: 1rem 2.3rem;
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 680px) {
+  .flex-space {
+    flex-direction: row;
+  }
+  .product-sort {
+    justify-content: start;
+    padding: 5px;
+    gap: 1rem;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
