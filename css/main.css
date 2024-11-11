@@ -40,6 +40,10 @@ body {
   justify-content: end;
 }
 
+#popular-products p {
+  margin-top: 0;
+}
+
 .search-area {
   position: relative;
   justify-content: center;
@@ -114,7 +118,7 @@ body {
   color: #000;
   text-decoration: none;
   background-color: rgb(247, 247, 247);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .flex-space {
@@ -122,4 +126,22 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.product-sort {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.product-btn {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  background-color: white;
+  padding: 1rem 4rem;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0.5px;
 }/*# sourceMappingURL=main.css.map */
