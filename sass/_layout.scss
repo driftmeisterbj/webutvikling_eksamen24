@@ -7,9 +7,10 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    gap: 1rem;
     
 
-    #global-header {
+    header {
         @include grid-placement("1/2", "1/2");
     }
 

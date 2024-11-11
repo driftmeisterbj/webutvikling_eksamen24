@@ -3,8 +3,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
+  gap: 1rem;
 }
-#main-grid #global-header {
+#main-grid header {
   grid-column: 1/2;
   grid-row: 1/2;
 }
@@ -20,6 +21,7 @@
 body {
   font-family: "Roboto", sans-serif;
   gap: 1rem;
+  margin: 0 15px;
 }
 
 #logo {
@@ -41,8 +43,14 @@ body {
   align-items: flex-end;
 }
 
-#popular-products p {
+#popular-products h2, #popular-categories h2, #reviews h2 {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 2rem;
+}
+#popular-products p, #popular-categories p, #reviews p {
   margin-top: 0;
+  width: 100%;
 }
 
 .search-area {
@@ -127,7 +135,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .product-sort {
@@ -163,7 +171,28 @@ body {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 500px) {
+.category-container {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0.5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.review-container img {
+  height: 100px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 525px) {
   .product-btn {
     padding: 1rem 2rem;
   }
