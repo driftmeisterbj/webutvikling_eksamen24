@@ -38,6 +38,13 @@ body{
     }
 }
 
+#contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 .search-area{
     position: relative;
     justify-content: center;
@@ -176,6 +183,25 @@ body{
     img{
         height: 100px;
         width: 100px;
+    }
+}
+
+.contact-line{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.shortcuts{  
+    display: flex; 
+    justify-content: start;
+    ul{
+        list-style: none;
+        
+    }
+    a{
+        text-decoration: none;
+        color: #000;
     }
 }
 

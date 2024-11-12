@@ -53,6 +53,13 @@ body {
   width: 100%;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .search-area {
   position: relative;
   justify-content: center;
@@ -190,6 +197,24 @@ body {
 .review-container img {
   height: 100px;
   width: 100px;
+}
+
+.contact-line {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.shortcuts {
+  display: flex;
+  justify-content: start;
+}
+.shortcuts ul {
+  list-style: none;
+}
+.shortcuts a {
+  text-decoration: none;
+  color: #000;
 }
 
 @media only screen and (max-width: 525px) {
