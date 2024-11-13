@@ -45,6 +45,29 @@ body{
     gap: 0.5rem;
 }
 
+#shortcuts{  
+    display: flex; 
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+#social-media{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    ul{
+        list-style: none;
+        padding-left: 0;
+    }
+}
+
 .search-area{
     position: relative;
     justify-content: center;
@@ -192,18 +215,6 @@ body{
     gap: 1rem;
 }
 
-.shortcuts{  
-    display: flex; 
-    justify-content: start;
-    ul{
-        list-style: none;
-        
-    }
-    a{
-        text-decoration: none;
-        color: #000;
-    }
-}
 
 @media only screen and (max-width: 525px) {
     .product-btn{
