@@ -21,7 +21,7 @@
 body {
   font-family: "Roboto", sans-serif;
   gap: 1rem;
-  margin: 0 15px;
+  margin: 10px 15px;
 }
 
 #logo {
@@ -43,6 +43,9 @@ body {
   align-items: flex-end;
 }
 
+#popular-products, #popular-categories, #reviews {
+  gap: 1rem;
+}
 #popular-products h2, #popular-categories h2, #reviews h2 {
   width: 100%;
   margin-bottom: 5px;
@@ -81,6 +84,42 @@ body {
 #social-media ul {
   list-style: none;
   padding-left: 0;
+}
+
+#product-display {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  justify-content: center;
+  max-width: 400px;
+  min-width: 200px;
+  margin: auto;
+  gap: 0.3rem;
+}
+#product-display img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  max-height: 400px;
+}
+#product-display h2, #product-display p {
+  margin: 7px 0;
+}
+#product-display a {
+  color: rgb(87, 85, 85);
+}
+
+#product-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px 0;
+  gap: 0.5rem;
+}
+
+#similar-products-display {
+  margin: 20px;
 }
 
 .search-area {
@@ -165,7 +204,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .product-sort {
@@ -191,14 +229,17 @@ body {
 .product-container {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  justify-content: center;
   max-width: 400px;
   min-width: 200px;
-  width: 100%;
-  padding: 1rem;
+  margin: auto;
 }
+
 .product-container img {
+  display: block;
   width: 100%;
-  max-width: 100%;
+  margin: 0 auto;
 }
 
 .category-container {
@@ -247,6 +288,29 @@ body {
 
 .breadcrumbs ul li a:hover {
   text-decoration: underline;
+}
+
+.similar-product {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.similar-product img {
+  max-width: 450px;
+  min-width: 200px;
+  height: auto;
+  width: 100%;
+}
+
+.similar-product h2 {
+  width: 50%;
+}
+
+.similar-product p {
+  width: 50%;
+  align-content: center;
+  text-align: end;
 }
 
 @media only screen and (max-width: 525px) {
