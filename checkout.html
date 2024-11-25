@@ -68,23 +68,24 @@
                 <form class="form-table">
                     <p>Leveringsadresse</p>
                     <label for="firstname">
-                        <input type="firstname" placeholder="Fornavn*">
+                        <input placeholder="Fornavn*">
                     </label>
                     <label for="lastname">
-                        <input type="lastname" placeholder="Etternavn*">
+                        <input placeholder="Etternavn*">
                     </label>
                     <label for="adress">
-                        <input type="adress" placeholder="Gateadresse*">
+                        <input placeholder="Gateadresse*">
                     </label>
                     <label for="postalnumber">
-                        <input type="postalnumber" placeholder="Postnummer*">
+                        <input placeholder="Postnummer*">
                     </label>
                     <label for="postalarea">
-                        <input type="postalarea" placeholder="Poststed*">
+                        <input placeholder="Poststed*">
                     </label>
+                    <a href="#" class="btn">Lagre</a>
+                    <a href="#">Avbryt</a>
                 </form>
-                <a href="#" class="btn">Lagre</a>
-                <a href="#">Avbryt</a>
+                
             </section>
             <section id="delivery-page" class="flex-space">
                 <h2>3. LEVERING</h2>
@@ -126,7 +127,24 @@
                     </label>
                     <h4>CVC/CVV</h4>
                     <label for="card-code">
-                        <input type="card-code" placeholder="Gateadresse*">
+                        <input placeholder="000">
+                    </label>
+                </form>
+                <h4>Å betale inkl. mva.</h4>
+                <a href="#" class="btn">Fullfør kjøp</a>
+                <p>
+                    Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
+                    Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                    uriktige eller ufullstendige opplysninger.
+                </p>
+                <form id="form-newsletter">
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Ja takk! Send nyhetsbrev til meg.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sms">
+                        Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                     </label>
                 </form>
             </section>

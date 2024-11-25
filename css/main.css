@@ -154,6 +154,11 @@ main section {
   font-weight: bold;
 }
 
+#form-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
 .search-area {
   display: flex;
   flex-direction: row;
@@ -371,15 +376,18 @@ main section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 0 30px auto;
   width: 100%;
   max-width: 100%;
+}
+.form-table a {
+  margin: 5px 0;
 }
 
 .form-table input {
   width: 100%;
   padding: 20px;
-  margin: 3px 0px;
+  margin: 3px 0 10px 0;
   box-sizing: border-box;
   font-size: 16px;
 }
