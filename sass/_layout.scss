@@ -8,7 +8,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     gap: 1rem;
-    
 
     header {
         @include grid-placement("1/2", "1/2");
@@ -23,7 +22,46 @@
     }
 
     footer {
-        @include grid-placement("1/2", "4/5")
+        @include grid-placement("1/2", "4/5");
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    #main-grid {
+        grid-template-columns: 1fr 3fr 1fr;
+
+        header {
+            @include grid-placement("1/4", "1/2");
+        }
+
+        main {
+            @include grid-placement("1/4", "2/3");
+        }
+
+        aside {
+            @include grid-placement("1/4", "3/4");
+        }
+
+        footer {
+            @include grid-placement("1/4", "4/5");
+        }
+
+        
+    }
+
+    #main-grid header {
+        .search-area {
+            @include grid-placement("1/2", "1/2");
+        }
+
+        #nav-menu {
+            @include grid-placement("2/3", "1/2");
+            flex-direction: row;
+        }
+
+        .nav-icons {
+            @include grid-placement("3/4", "1/2");
+        }
     }
 }
 
