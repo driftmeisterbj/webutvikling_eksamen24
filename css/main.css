@@ -24,8 +24,15 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  gap: 1rem;
-  margin: 10px 15px;
+  margin: 0px 15px;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+main section {
+  margin-bottom: 2.5rem;
 }
 
 #logo {
@@ -45,6 +52,14 @@ body {
   position: relative;
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+#banner a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  background-color: rgb(247, 247, 247);
+  padding: 1rem 1rem;
 }
 
 #popular-products, #popular-categories, #reviews {
@@ -116,6 +131,19 @@ body {
 
 #similar-products-display {
   margin: 20px;
+}
+
+#information-page {
+  gap: 1rem;
+}
+
+#delivery-page form ul {
+  list-style: none;
+  padding: 0;
+}
+#delivery-page form ul li {
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .search-area {
@@ -194,17 +222,23 @@ body {
 
 .btn {
   display: inline-block;
-  color: #000;
-  text-decoration: none;
-  background-color: rgb(247, 247, 247);
+  background-color: #2e2c2c;
+  color: white;
   padding: 1rem 1rem;
-  width: 170px;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .flex-space {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-space .btn {
+  align-self: flex-start;
+  width: auto;
 }
 
 .product-sort {
@@ -330,15 +364,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0 auto;
   width: 100%;
   max-width: 100%;
-  margin: 0 auto;
 }
 
 .form-table input {
   width: 100%;
   padding: 20px;
-  margin: 5px 0px;
+  margin: 3px 0px;
   box-sizing: border-box;
   font-size: 16px;
 }
