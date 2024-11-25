@@ -15,10 +15,8 @@
         <header>
             <nav class="header-nav">
                 <form class="search-area">
-                    <label for="search">
-                        <input type="search" placeholder="søk her">
-                        <i class="fa-solid fa-magnifying-glass" title="Søk"></i>
-                    </label>
+                    <input type="search" placeholder="søk her">
+                    <button><i class="fa-solid fa-magnifying-glass" title=""></i></button>
                 </form>
                 <ul class="nav-left">
                     <li><a href="#">Hjem</a></li>
@@ -112,6 +110,24 @@
                             </label>
                         </li>
                     </ul>
+                </form>
+            </section>
+            <section id="payment-section">
+                <h2>BETALING</h2>
+                <h3>BETAL MED KORT</h3>
+                <form class="form-table">
+                    <h4>Kortnummer</h4>
+                    <label for="cardnumber">
+                        <input type="number" placeholder="1234************">
+                    </label>
+                    <h4>Utløpsdato</h4>
+                    <label for="expiry-date">
+                        <input type="date" placeholder="">
+                    </label>
+                    <h4>CVC/CVV</h4>
+                    <label for="card-code">
+                        <input type="card-code" placeholder="Gateadresse*">
+                    </label>
                 </form>
             </section>
         </main>
