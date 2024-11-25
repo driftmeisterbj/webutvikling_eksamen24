@@ -58,7 +58,7 @@ main section{
     color: #000;
     text-decoration: none;
     background-color: rgb(247, 247, 247);
-    padding: 1rem 1rem;
+    padding: 1rem;
 }
 
 #popular-products, #popular-categories, #reviews{
@@ -191,37 +191,39 @@ main section{
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 0.2rem;
-    padding: 0;
+    gap: 0.5rem;
 }
 
 .header-nav a{
     text-decoration: none;
     color: #000;
+    margin: 0;
     padding: 10px;
 }
 
 .header-nav li{
     list-style: none;
+    margin: 5px;
 }
 
 .nav-left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding: 0;
     gap: 0.5rem;
+    margin: 0;
 }
 
 .nav-right{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding: 0;
     gap: 0.5rem;
+    margin: 0;
 }
 
 .nav-icons{
