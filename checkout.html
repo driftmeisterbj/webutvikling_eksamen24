@@ -22,7 +22,7 @@
                     <li><a href="#">Hjem</a></li>
                     <li><a href="#">Produkter</a></li>
                 </ul>
-                <img id="logo" alt="Logo">
+                <img id="logo" alt="Logo" src="#">
                 <ul class="nav-right">
                     <li><a href="#">Kategorier</a></li>
                     <li><a href="#">Kontakt oss</a></li>
@@ -68,19 +68,19 @@
                 <form class="form-table">
                     <p>Leveringsadresse</p>
                     <label for="firstname">
-                        <input placeholder="Fornavn*">
+                        <input id="firstname" placeholder="Fornavn*">
                     </label>
                     <label for="lastname">
-                        <input placeholder="Etternavn*">
+                        <input id="lastname" placeholder="Etternavn*">
                     </label>
                     <label for="adress">
-                        <input placeholder="Gateadresse*">
+                        <input id="adress" placeholder="Gateadresse*">
                     </label>
                     <label for="postalnumber">
-                        <input placeholder="Postnummer*">
+                        <input id="postalnumber" placeholder="Postnummer*">
                     </label>
                     <label for="postalarea">
-                        <input placeholder="Poststed*">
+                        <input id="postalarea" placeholder="Poststed*">
                     </label>
                     <a href="#" class="btn">Lagre</a>
                     <a href="#">Avbryt</a>
@@ -119,15 +119,15 @@
                 <form class="form-table">
                     <h4>Kortnummer</h4>
                     <label for="cardnumber">
-                        <input type="number" placeholder="1234************">
+                        <input id="cardnumber" type="number" placeholder="1234************">
                     </label>
                     <h4>Utløpsdato</h4>
                     <label for="expiry-date">
-                        <input type="date" placeholder="">
+                        <input id="expiry-date" type="date">
                     </label>
                     <h4>CVC/CVV</h4>
                     <label for="card-code">
-                        <input placeholder="000">
+                        <input id="card-code" placeholder="000">
                     </label>
                 </form>
                 <h4>Å betale inkl. mva.</h4>
@@ -157,26 +157,26 @@
             </section>
             <section id="contact">
                 <h3>Kontakt</h3>
-                <article class="contact-line">
+                <address class="contact-line">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span class="contact-title">Adresse:</span>
-                    <span class="contact-description">B R A Veien 4, 1757 Halden</span>
-                </article>
-                <article class="contact-line">
+                    <span class="bold-text">Adresse:</span>
+                    <span>B R A Veien 4, 1757 Halden</span>
+                </address>
+                <address class="contact-line">
                     <i class="fa-solid fa-phone"></i>
-                    <span class="contact-title">Telefon:</span>
-                    <span class="contact-description">69 60 80 00</span>
-                </article>
-                <article class="contact-line">
+                    <span class="bold-text">Telefon:</span>
+                    <span>69 60 80 00</span>
+                </address>
+                <address class="contact-line">
                     <i class="fa-solid fa-envelope"></i>
-                    <span class="contact-title">E-post:</span>
-                    <span class="contact-description">halden@hiof.no</span>
-                </article>
-                <article class="contact-line">
+                    <span class="bold-text">E-post:</span>
+                    <span>halden@hiof.no</span>
+                </address>
+                <address class="contact-line">
                     <i class="fa-solid fa-clock"></i>
-                    <span class="contact-title">Åpningstider:</span>
-                    <span class="contact-description">Stenger 15:00</span>
-                </article>
+                    <span class="bold-text">Åpningstider:</span>
+                    <span>Stenger 15:00</span>
+                </address>
             </section>
             <section id="shortcuts">
                 <h3>SNARVEIER</h3>
