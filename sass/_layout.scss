@@ -39,14 +39,10 @@
 
             #search-area {
                 @include grid-placement("1/2", "1/2");
-                width: auto;
-                max-width: 200px;
             }
         
             #nav-menu {
                 @include grid-placement("2/3", "1/2");
-                flex-direction: row;
-                margin: 0 auto;
             }
         
             #nav-icons {
@@ -83,9 +79,7 @@
             #social-media {
                 @include grid-placement("3/4", "2/3");
             }
-        }
-
-        
+        } 
     }
 }
 

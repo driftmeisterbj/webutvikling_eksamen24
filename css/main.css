@@ -38,14 +38,10 @@
   #main-grid header #search-area {
     grid-column: 1/2;
     grid-row: 1/2;
-    width: auto;
-    max-width: 200px;
   }
   #main-grid header #nav-menu {
     grid-column: 2/3;
     grid-row: 1/2;
-    flex-direction: row;
-    margin: 0 auto;
   }
   #main-grid header #nav-icons {
     grid-column: 3/4;
@@ -495,6 +491,28 @@ main section {
   }
 }
 @media only screen and (min-width: 680px) {
+  #search-area {
+    width: auto;
+    max-width: 200px;
+  }
+  #nav-menu {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  #contact {
+    align-content: start;
+  }
+  #shortcuts {
+    align-content: center;
+  }
+  #social-media {
+    align-content: end;
+  }
+  #social-media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .flex-space {
     flex-direction: row;
   }

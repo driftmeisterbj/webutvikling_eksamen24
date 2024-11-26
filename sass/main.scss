@@ -432,6 +432,34 @@ main section{
 }
 
 @media only screen and (min-width: 680px) {
+    #search-area {
+        width: auto;
+        max-width: 200px;
+    }
+
+    #nav-menu {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    #contact {
+        align-content: start;
+    }
+
+    #shortcuts {
+       align-content: center;
+    }
+
+    #social-media {
+        align-content: end;
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
     .flex-space{
         flex-direction: row;
     }
