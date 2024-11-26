@@ -172,6 +172,7 @@ main section {
 
 #popular-products, #popular-categories, #reviews {
   gap: 1rem;
+  width: 100%;
 }
 #popular-products h2, #popular-categories h2, #reviews h2 {
   width: 100%;
@@ -185,6 +186,7 @@ main section {
 
 #popular-categories {
   gap: 4px;
+  max-width: 100%;
 }
 
 #contact {
@@ -321,6 +323,13 @@ main section {
   padding: 4px;
 }
 
+#reviews {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .btn {
   display: inline-block;
   background-color: #2e2c2c;
@@ -384,6 +393,7 @@ main section {
 
 .category-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 386px;
   height: 300px;
@@ -395,6 +405,7 @@ main section {
   color: rgb(255, 255, 255);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  background-size: cover;
 }
 .category-container h3 {
   border: 1px solid rgb(51, 51, 51);
@@ -405,25 +416,21 @@ main section {
 .category-1 {
   /*Image by <a href="https://pixabay.com/users/lalmch-1026205/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=767781">Lalmch</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=767781">Pixabay</a>*/
   background-image: url("../img/categories/category1.jpg");
-  background-size: cover;
 }
 
 .category-2 {
   /*Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1868496">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1868496">Pixabay</a>*/
   background-image: url("../img/categories/category2.jpg");
-  background-size: cover;
 }
 
 .category-3 {
   /*Image by <a href="https://pixabay.com/users/jeshoots-com-264599/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=410324">Jan Vašek</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=410324">Pixabay</a>*/
   background-image: url("../img/categories/category3.jpg");
-  background-size: cover;
 }
 
 .category-4 {
   /*Image by <a href="https://pixabay.com/users/wikimediaimages-1185597/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2202637">WikimediaImages</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2202637">Pixabay</a>*/
   background-image: url("../img/categories/category4.jpg");
-  background-size: cover;
   background-position: center;
   max-width: 864px;
 }
@@ -431,7 +438,6 @@ main section {
 .category-5 {
   /*Image by <a href="https://pixabay.com/users/freephotocc-2275370/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280538">Free Photos</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280538">Pixabay</a>*/
   background-image: url("../img/categories/category5.jpg");
-  background-size: cover;
   background-position: right;
   max-width: 300px;
 }
@@ -440,6 +446,8 @@ main section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  max-width: 289px;
+  gap: 1rem;
 }
 .review-container img {
   height: 150px;
@@ -561,6 +569,9 @@ main section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  #reviews {
+    flex-direction: row;
   }
   .flex-space {
     flex-direction: row;
