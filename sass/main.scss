@@ -279,9 +279,10 @@ main section{
     display: inline-block;
     background-color: #2e2c2c;
     color: white;
-    padding: 1rem 1rem;
+    padding: 1rem;
     text-decoration: none;
     box-sizing: border-box;
+    
 }
     
 .flex-space{
@@ -488,9 +489,16 @@ main section{
     margin: 0 0 30px auto;
     width: 100%;
     max-width: 100%;
+    gap: 1rem;
 
-    a {
-        margin: 5px 0;
+    .btn, a {
+        width: 100%;
+        text-align: center;
+    }
+
+    a{
+        box-sizing: border-box;
+        
     }
 
     
@@ -571,13 +579,5 @@ main section{
         padding: 5px;
         gap: 1rem;
         width: 100%;
-    }
-
-    .form-table {
-        gap: 1rem;
-
-        a {
-            text-align: center;
-        }
-    }
+    }  
 }

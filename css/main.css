@@ -397,7 +397,7 @@ main section {
   display: inline-block;
   background-color: #2e2c2c;
   color: white;
-  padding: 1rem 1rem;
+  padding: 1rem;
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -605,9 +605,14 @@ main section {
   margin: 0 0 30px auto;
   width: 100%;
   max-width: 100%;
+  gap: 1rem;
+}
+.form-table .btn, .form-table a {
+  width: 100%;
+  text-align: center;
 }
 .form-table a {
-  margin: 5px 0;
+  box-sizing: border-box;
 }
 
 .form-table input {
@@ -673,11 +678,5 @@ main section {
     padding: 5px;
     gap: 1rem;
     width: 100%;
-  }
-  .form-table {
-    gap: 1rem;
-  }
-  .form-table a {
-    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
