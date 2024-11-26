@@ -52,6 +52,23 @@
 
         main {
             @include grid-placement("1/4", "2/3");
+
+            #product-display {
+                
+            }
+
+            #product-pictures {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto auto auto;
+                margin: 0;
+                gap: 3px;
+
+                .product-main-pic {
+                    @include grid-placement("1/4", "1/4")
+                }
+            }
         }
 
         aside {

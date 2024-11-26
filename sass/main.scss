@@ -156,14 +156,13 @@ main section{
     justify-content: center;
     max-width: 400px;
     min-width: 200px;
-    margin: auto;
     gap: 0.3rem;
     
     img{
-        display: block;
+        display: inline-block;
         width: auto;
-        margin: 0 auto;
         max-height: 400px;
+        max-width: 100%;
     }
 
     h2, p{
@@ -266,6 +265,14 @@ main section{
     gap: 0.5rem;
 }
 
+.product-main-pic {
+    margin: 0;
+    padding: 0;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
 
 .btn {
     display: inline-block;
@@ -313,8 +320,7 @@ main section{
     flex-direction: column;
     padding: 0;
     justify-content: center;
-    max-width: 350px;
-    min-width: 200px;
+    width: 350px;
     margin: 0 1rem;
     gap: 1rem;
 
@@ -322,6 +328,7 @@ main section{
         display: block;
         width: 100%;
         margin: 0 auto;
+        object-fit: cover;
     }
 }
 
@@ -389,6 +396,8 @@ main section{
     img{
         height: 150px;
         width: 150px;
+        /*https://stackoverflow.com/questions/2623603/crop-an-image-instead-of-stretching-it*/
+        object-fit: cover;
     }
 }
 
@@ -521,6 +530,8 @@ main section{
     #reviews {
         flex-direction: row;
     }
+
+    
 
     .flex-space{
         flex-direction: row;
