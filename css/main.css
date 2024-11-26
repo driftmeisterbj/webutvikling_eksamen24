@@ -607,12 +607,16 @@ main section {
   max-width: 100%;
   gap: 1rem;
 }
-.form-table .btn, .form-table a {
+.form-table .btn {
   width: 100%;
   text-align: center;
 }
 .form-table a {
   box-sizing: border-box;
+  padding: 1rem;
+  width: 25%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .form-table input {

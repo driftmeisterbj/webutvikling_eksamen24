@@ -491,14 +491,17 @@ main section{
     max-width: 100%;
     gap: 1rem;
 
-    .btn, a {
+    .btn {
         width: 100%;
         text-align: center;
     }
 
     a{
         box-sizing: border-box;
-        
+        padding: 1rem;
+        width: 25%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     
