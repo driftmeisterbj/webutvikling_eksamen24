@@ -26,6 +26,33 @@ h5 {
     font-weight: normal;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+}
+
+header li{
+    list-style: none;
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 footer section {
     margin-bottom: 20px;
 }
@@ -168,7 +195,7 @@ main section{
 }
 
 // https://stackoverflow.com/questions/15314407/how-to-add-button-inside-an-input
-.search-area{
+#search-area{
     display:flex;
     flex-direction:row;
     margin: 20px;
@@ -181,48 +208,21 @@ main section{
     border-width: 0.7px;
 }
 
-.search-area button {
+#search-area button {
     background: none;
     border: none;
 }
 
-.search-area input {
+#search-area input {
     border-style: none;
     width: 100%;
 }
 
-.search-area input:focus {
+#search-area input:focus {
     outline: none;
 }
 
-.header-nav{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-}
 
-.header-nav a{
-    text-decoration: none;
-    color: #000;
-    margin: 0;
-}
-
-.header-nav li{
-    list-style: none;
-    margin: 5px;
-}
-
-.nav-left{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    gap: 0.5rem;
-    margin: 0;
-}
 #nav-menu{
     display: flex;
     flex-direction: column;
@@ -236,20 +236,9 @@ main section{
 #nav-menu a {
     padding: 6px;
 }
-.nav-left a, .nav-right a, #logo {
-    padding: 6px;
-}
 
-.nav-right{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    gap: 0.5rem;
-    margin: 0;
-}
 
-.nav-icons{
+#nav-icons{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -258,7 +247,7 @@ main section{
     margin: 0;
 }
 
-.nav-icons li a {
+#nav-icons li a {
     padding: 4px;
 }
 

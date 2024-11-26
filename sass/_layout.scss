@@ -29,9 +29,29 @@
 @media only screen and (min-width: 680px) {
     #main-grid {
         grid-template-columns: 1fr 3fr 1fr;
-
+        max-width: 1200px;
+        margin: 0 auto;
         header {
             @include grid-placement("1/4", "1/2");
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: auto;
+
+            #search-area {
+                @include grid-placement("1/2", "1/2");
+                width: auto;
+                max-width: 200px;
+            }
+        
+            #nav-menu {
+                @include grid-placement("2/3", "1/2");
+                flex-direction: row;
+                margin: 0 auto;
+            }
+        
+            #nav-icons {
+                @include grid-placement("3/4", "1/2");
+            }
         }
 
         main {
@@ -44,24 +64,28 @@
 
         footer {
             @include grid-placement("1/4", "4/5");
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+
+            #footer-start {
+                @include grid-placement("1/4", "1/2");
+            }
+
+            #contact {
+                @include grid-placement("1/2", "2/3");
+            }
+
+            #shortcuts {
+                @include grid-placement("2/3", "2/3");
+            }
+
+            #social-media {
+                @include grid-placement("3/4", "2/3");
+            }
         }
 
         
-    }
-
-    #main-grid header {
-        .search-area {
-            @include grid-placement("1/2", "1/2");
-        }
-
-        #nav-menu {
-            @include grid-placement("2/3", "1/2");
-            flex-direction: row;
-        }
-
-        .nav-icons {
-            @include grid-placement("3/4", "1/2");
-        }
     }
 }
 
