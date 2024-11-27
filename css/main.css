@@ -305,13 +305,17 @@ main section {
   gap: 1rem;
 }
 
-#delivery-page form ul {
+#delivery-form form ul {
   list-style: none;
   padding: 0;
 }
-#delivery-page form ul li {
-  margin-bottom: 2rem;
+#delivery-form form ul li {
   font-weight: bold;
+  margin: 0 1rem 2rem;
+}
+#delivery-form p {
+  font-weight: normal;
+  color: gray;
 }
 
 #form-newsletter {
@@ -682,5 +686,8 @@ main section {
     padding: 5px;
     gap: 1rem;
     width: 100%;
+  }
+  #delivery-form {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
