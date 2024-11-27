@@ -112,9 +112,15 @@
             }
         }
 
-        main {
+        #main-index, #main-product {
             @include grid-placement("1/4", "2/3");
+        }
 
+        #main-checkout {
+            @include grid-placement("2/3", "2/3");
+        }
+
+        main {
             .form-table {
                 display: grid;
                 grid-template-columns: 1fr 1fr;

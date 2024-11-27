@@ -664,6 +664,18 @@ main section{
     align-items: center;
 }
 
+.shoppingbag-icons {
+    display: flex;
+    flex-direction: row;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: large;
+        padding: 0.5rem;
+    } 
+}
+
 @media only screen and (max-width: 525px) {
     .product-btn{
         padding: 1rem 2rem;
@@ -758,6 +770,10 @@ main section{
 
     .cart-product .cart-info {
         align-self: center;
+    }
+
+    .shoppingbag-icons {
+        flex-direction: column;
     }
 
 }

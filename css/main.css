@@ -108,8 +108,12 @@
     grid-column: 3/4;
     grid-row: 1/2;
   }
-  #main-grid main {
+  #main-grid #main-index, #main-grid #main-product {
     grid-column: 1/4;
+    grid-row: 2/3;
+  }
+  #main-grid #main-checkout {
+    grid-column: 2/3;
     grid-row: 2/3;
   }
   #main-grid main .form-table {
@@ -803,6 +807,17 @@ main section {
   align-items: center;
 }
 
+.shoppingbag-icons {
+  display: flex;
+  flex-direction: row;
+}
+.shoppingbag-icons a {
+  text-decoration: none;
+  color: #000;
+  font-size: large;
+  padding: 0.5rem;
+}
+
 @media only screen and (max-width: 525px) {
   .product-btn {
     padding: 1rem 2rem;
@@ -878,5 +893,8 @@ main section {
   }
   .cart-product .cart-info {
     align-self: center;
+  }
+  .shoppingbag-icons {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
