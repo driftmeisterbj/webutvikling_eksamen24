@@ -200,6 +200,8 @@ main section{
 #form-newsletter {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
 }
 
 // https://stackoverflow.com/questions/15314407/how-to-add-button-inside-an-input
@@ -487,7 +489,7 @@ main section{
     text-align: end;
 }
 
-.form-table{
+.form-table, .form-table-payment{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -508,16 +510,26 @@ main section{
         text-align: center;
         margin: 0 auto;
     }
-
-    
 }
 
-.form-table input {
+.form-table input, .form-table-payment input{
     width: 100%;
     padding: 20px;
     margin: 3px 0 10px 0;
     font-size: 16px;
     box-sizing: border-box;
+}
+
+.form-table-payment {
+    #ftp-id-5, #ftp-id-6, #ftp-id-7, #ftp-id-8 {
+        text-align: center;
+    }
+
+    #ftp-id-6 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: 900;
+    }
 }
 
 @media only screen and (max-width: 525px) {

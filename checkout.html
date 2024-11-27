@@ -128,37 +128,37 @@
                 </form>
             </section>
             <section id="payment-section">
-                <h2>BETALING</h2>
-                <h3>BETAL MED KORT</h3>
-                <form class="form-table">
-                    <h4>Kortnummer</h4>
-                    <label for="cardnumber">
+                <h2>4. BETALING</h2>
+                <form class="form-table-payment">
+                    <h3 id="ftp-id-1">BETAL MED KORT</h3>
+                    <label for="cardnumber" id="ftp-id-2">
+                        <h4>Kortnummer</h4>
                         <input id="cardnumber" type="number" placeholder="1234************">
                     </label>
-                    <h4>Utløpsdato</h4>
-                    <label for="expiry-date">
+                    <label for="expiry-date"  id="ftp-id-3">
+                        <h4>Utløpsdato</h4>
                         <input id="expiry-date" type="date">
                     </label>
-                    <h4>CVC/CVV</h4>
-                    <label for="card-code">
+                    <label for="card-code"  id="ftp-id-4">
+                        <h4>CVC/CVV</h4>
                         <input id="card-code" placeholder="000">
                     </label>
-                </form>
-                <h4>Å betale inkl. mva.</h4>
-                <p>1199 kr</p>
-                <a href="#" class="btn">Fullfør kjøp</a>
-                <p>
+                <h4 id="ftp-id-5">Å betale inkl. mva.</h4>
+                <p id="ftp-id-6">1199 kr</p>
+                <a href="#" class="btn" id="ftp-id-7">Fullfør kjøp</a>
+                <p id="ftp-id-8">
                     Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
                     Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger
                     uriktige eller ufullstendige opplysninger.
                 </p>
+                </form>
                 <form id="form-newsletter">
-                    <label>
-                        <input type="checkbox" name="newsletter">
+                    <label for="newsletter-check">
+                        <input type="checkbox" id="newsletter-check">
                         Ja takk! Send nyhetsbrev til meg.
                     </label>
-                    <label>
-                        <input type="checkbox" name="sms">
+                    <label for="sms-check">
+                        <input type="checkbox" id="sms-check">
                         Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
                     </label>
                 </form>
