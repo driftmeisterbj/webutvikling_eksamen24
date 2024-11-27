@@ -47,7 +47,9 @@ header li{
 }
 
 main {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 footer{
@@ -177,6 +179,10 @@ main section{
 
 #similar-products-display{
     margin: 20px;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 #information-page {
@@ -279,6 +285,10 @@ main section{
     ul {
         margin-top: 0;
     }
+
+    img {
+        border-radius: 100%;
+    }
 }
 
 #product-pictures {
@@ -323,6 +333,15 @@ main section{
     box-sizing: border-box;
     
 }
+
+.block-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    max-width: fit-content;
+    max-height: fit-content;
+}
     
 .flex-space{
     display: flex;
@@ -362,6 +381,9 @@ main section{
     flex-wrap: wrap;
     padding: 0;
     gap: 1rem;
+
+    text-decoration: none;
+    color: #000;
 
     picture{
         display: block;
@@ -515,12 +537,20 @@ main section{
 
 #product-info{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     margin: 10px 0;
     gap: 0.5rem;
     max-width: 440px;
+    align-self: center;
+
+    h2, a, p {
+        width: 100%;
+    }
+
+    .btn {
+        width: 86%;
+    }
 }
 
 .similar-product{
@@ -607,6 +637,11 @@ main section{
     max-width: 160px;
 }
 
+.dropdown-menu {
+    width: 100%;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 525px) {
     .product-btn{
         padding: 1rem 2rem;
@@ -648,6 +683,7 @@ main section{
 
     #reviews {
         flex-direction: row;
+        gap: 0.5rem;
     }
 
     #product-pictures {
@@ -666,7 +702,8 @@ main section{
     #product-info {
         width: 40%;
         margin: 0;
-        align-content: center;
+        margin-left: 40px;
+        
     }
 
 
