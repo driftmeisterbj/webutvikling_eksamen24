@@ -19,6 +19,7 @@
                 <button><i class="fa-solid fa-magnifying-glass" title=""></i></button>
             </form>
             <nav id="nav-menu">
+            <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#popular-products">Produkter</a></li>
                 <li>
@@ -28,6 +29,7 @@
                 </li>
                 <li><a href="#popular-categories">Kategorier</a></li>
                 <li><a href="#contact">Kontakt oss</a></li>
+            </ul>
             </nav>
             <ul id="nav-icons">
                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
@@ -48,16 +50,21 @@
                         <p>Kr 1999</p>
                         <p>Farge: grønn</p>
                         <form class="shoppingbag-buttons">
-                            <label for="size-dropdown">Størrelse</label>
-                            <select name="size-dropdown" class="dropdown-menu-small">
-                                <option value="XS">XS</option>
-                                <option value="S" selected>S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                                <option value="XL">XL</option>
-                            </select>
-                            <label for="number-of-products">Antall</label>
-                            <input name="number-of-products" type="number" value="1">
+                            <label>
+                                Størrelse
+                                <select class="dropdown-menu-small">
+                                    <option value="XS">XS</option>
+                                    <option value="S" selected>S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </label>
+                            <label>
+                                Antall
+                                <input type="number" value="1">
+                            </label>
+                            
                         </form>
                     </section>
                     <form class="shoppingbag-icons">
@@ -69,50 +76,91 @@
                     <picture>
                         <img src="img/tulip.jpg" alt="Blomster">
                     </picture>
-                    <section class="product-info">
+                    <section class="cart-info">
                         <h3>PRODUCT NAME</h3>
                         <p>Kr 1999</p>
                         <p>Farge: grønn</p>
+                        <form class="shoppingbag-buttons">
+                            <label>
+                                Størrelse
+                                <select class="dropdown-menu-small">
+                                    <option value="XS">XS</option>
+                                    <option value="S" selected>S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </label>
+                            <label>
+                                Antall
+                                <input type="number" value="1">
+                            </label>
+                            
+                        </form>
                     </section>
+                    <form class="shoppingbag-icons">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-trash"></i></a>
+                    </form>
                 </article>
                 <article class="cart-product">
                     <picture>
                         <img src="img/tulip.jpg" alt="Blomster">
                     </picture>
-                    <section class="product-info">
+                    <section class="cart-info">
                         <h3>PRODUCT NAME</h3>
                         <p>Kr 1999</p>
                         <p>Farge: grønn</p>
+                        <form class="shoppingbag-buttons">
+                            <label>
+                                Størrelse
+                                <select class="dropdown-menu-small">
+                                    <option value="XS">XS</option>
+                                    <option value="S" selected>S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </label>
+                            <label>
+                                Antall
+                                <input type="number" value="1">
+                            </label>
+                            
+                        </form>
                     </section>
+                    <form class="shoppingbag-icons">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-solid fa-trash"></i></a>
+                    </form>
                 </article>
             </section>
             <section id="information-page" class="flex-space">
                 <h2>2. DINE OPPLYSNINGER</h2>
                 <form class="form-table">
                     <label for="firstname" id="form-id-1">
-                        <h4>Fornavn</h4>
+                        Fornavn
                         <input id="firstname" placeholder="Ola*">
                     </label>
                     <label for="lastname" id="form-id-2">
-                        <h4>Etternavn</h4>
+                        Etternavn
                         <input id="lastname" placeholder="Nordmann*">
                     </label>
                     <label for="adress" id="form-id-3">
-                        <h4>Gateadresse</h4>
+                        Gateadresse
                         <input id="adress" placeholder="Testveien 123*">
                     </label>
                     <label for="postalnumber" id="form-id-4">
-                        <h4>Postnummer</h4>
+                        Postnummer
                         <input id="postalnumber" placeholder="1337*">
                     </label>
                     <label for="postalarea" id="form-id-5">
-                        <h4>Poststed</h4>
+                        Poststed
                         <input id="postalarea" placeholder="Halden*">
                     </label>
                     <a href="#" class="btn" id="form-id-6">Lagre</a>
                     <a href="#" id="form-id-7">Avbryt</a>
                 </form>
-                
             </section>
             <section id="delivery-form" class="flex-space">
                 <h2>3. LEVERING</h2>
@@ -123,22 +171,22 @@
                             <label for="express-home">
                                 <input type="radio" name="delivery" id="express-home">
                                 Express - Hjemlevering
-                                <p>3 - 4 virkedager</p>
                             </label>
+                            <p>3 - 4 virkedager</p>
                         </li>
                         <li>
                             <label for="express-delivery">
                                 <input type="radio" name="delivery" id="express-delivery">
                                 Ekspress - Pakke til utleveringssted
-                                <p>1 - 3 virkedager</p>
                             </label>
+                            <p>1 - 3 virkedager</p>
                         </li>
                         <li>
                             <label for="standard-home">
                                 <input type="radio" name="delivery" id="standard-home">
                                 Standard - Hjemlevering
-                                <p>5 - 8 virkedager</p>
                             </label>
+                            <p>5 - 8 virkedager</p>
                         </li>
                     </ul>
                 </form>
@@ -148,15 +196,15 @@
                 <form class="form-table-payment">
                     <h3 id="ftp-id-1">BETAL MED KORT</h3>
                     <label for="cardnumber" id="ftp-id-2">
-                        <h4>Kortnummer</h4>
+                        Kortnummer
                         <input id="cardnumber" type="number" placeholder="1234************">
                     </label>
                     <label for="expiry-date"  id="ftp-id-3">
-                        <h4>Utløpsdato</h4>
+                        Utløpsdato
                         <input id="expiry-date" type="date">
                     </label>
                     <label for="card-code"  id="ftp-id-4">
-                        <h4>CVC/CVV</h4>
+                        CVC/CVV
                         <input id="card-code" placeholder="000">
                     </label>
                 <h4 id="ftp-id-5">Å betale inkl. mva.</h4>
