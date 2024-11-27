@@ -436,6 +436,10 @@ main section {
   flex-direction: column;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+
 .btn {
   display: inline-block;
   background-color: #2e2c2c;
