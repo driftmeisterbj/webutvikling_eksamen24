@@ -203,18 +203,12 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
 }
 
 header a {
   text-decoration: none;
   color: #000;
   margin: 0;
-}
-
-header li {
-  list-style: none;
-  margin: 5px;
 }
 
 main {
@@ -349,7 +343,7 @@ main section {
 }
 
 #information-page {
-  gap: 0.5rem;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -419,18 +413,40 @@ main section {
   gap: 0.5rem;
   margin: 0;
 }
+#nav-menu ul {
+  padding: 0;
+}
+#nav-menu li {
+  list-style: none;
+  margin: 15px;
+}
 
 #nav-menu a {
   padding: 6px;
 }
 
 #nav-icons {
-  display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 0;
   margin: 0;
+}
+#nav-icons li {
+  list-style: none;
+}
+
+#nav-icons ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+#nav-icons ul li {
+  list-style: none;
 }
 
 #nav-icons li a {
@@ -737,20 +753,20 @@ main section {
   text-align: end;
 }
 
-.form-table, .form-table-payment {
+.form-table, .form-table-payment, .form-table-extra {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 0 0 30px auto;
+  margin: 0;
   width: 100%;
   max-width: 100%;
   gap: 1rem;
 }
-.form-table .btn, .form-table-payment .btn {
+.form-table .btn, .form-table-payment .btn, .form-table-extra .btn {
   width: 100%;
   text-align: center;
 }
-.form-table a, .form-table-payment a {
+.form-table a, .form-table-payment a, .form-table-extra a {
   box-sizing: border-box;
   padding: 1rem;
   width: 100%;
@@ -828,6 +844,10 @@ main section {
   }
 }
 @media only screen and (min-width: 680px) {
+  header ul li {
+    display: inline-block;
+    margin: auto;
+  }
   main {
     margin: 0;
   }
