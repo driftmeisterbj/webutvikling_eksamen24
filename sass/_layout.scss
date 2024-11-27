@@ -20,6 +20,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto auto auto auto;
+            max-width: 480px;
+            margin: 0 auto;
 
             #product-main-pic {
                 @include grid-placement("1/4", "1/4");

@@ -81,17 +81,19 @@
                     <p>
                         Farge: <span class="bold-text">grønn</span>
                     </p>
-                    <select name="size-dropdown" class="dropdown-menu">
-                        <!--https://www.geeksforgeeks.org/how-to-set-the-default-value-for-an-html-select-element/-->
-                        <option value="none" selected disabled hidden>Velg størrelse</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
-                    <button class="btn">Legg til i handlekurv</button>
-                    <button class="block-btn"><i class="fa-regular fa-heart"></i></button>
+                    <form id="product-info-buttons">
+                        <select name="size-dropdown" class="dropdown-menu">
+                            <!-- https://www.geeksforgeeks.org/how-to-set-the-default-value-for-an-html-select-element /-->
+                            <option value="none" selected disabled hidden>Velg størrelse</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                        <button class="btn">Legg til i handlekurv</button>
+                        <button class="block-btn"><i class="fa-regular fa-heart"></i></button>
+                    </form>
                 </article>
             </section>
         </main>

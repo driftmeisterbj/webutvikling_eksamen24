@@ -43,10 +43,22 @@
                     <picture>
                         <img src="img/tulip.jpg" alt="Blomster">
                     </picture>
-                    <section class="product-info">
+                    <section class="cart-info">
                         <h3>PRODUCT NAME</h3>
                         <p>Kr 1999</p>
                         <p>Farge: grønn</p>
+                        <form class="shoppingbag-buttons">
+                            <label for="size-dropdown">Størrelse</label>
+                            <select name="size-dropdown" class="dropdown-menu-small">
+                                <option value="XS">XS</option>
+                                <option value="S" selected>S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <label for="number-of-products">Antall</label>
+                            <input name="number-of-products" type="number" value="1">
+                        </form>
                     </section>
                 </article>
                 <article class="cart-product">
