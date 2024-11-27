@@ -862,6 +862,7 @@ main section {
   }
   #nav-icons {
     display: block;
+    text-align: center;
   }
   #contact {
     align-content: start;
