@@ -349,6 +349,9 @@ main section {
   gap: 1rem;
 }
 
+#delivery-form {
+  width: 100%;
+}
 #delivery-form form ul {
   list-style: none;
   padding: 0;
@@ -434,7 +437,7 @@ main section {
   width: 100%;
   margin: 0;
   gap: 0.2rem;
-  max-width: 568px;
+  max-width: 700px;
 }
 
 #product-main-pic {
@@ -447,7 +450,13 @@ main section {
 }
 
 #shopping-cart {
-  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  max-width: 95%;
+}
+#shopping-cart h2 {
+  width: 100%;
 }
 
 .bold-text {
@@ -501,7 +510,6 @@ main section {
   flex-wrap: wrap;
   padding: 0;
   gap: 1rem;
-  justify-content: center;
 }
 .product-container picture, .cart-product picture {
   display: block;
@@ -536,8 +544,8 @@ main section {
 }
 
 .cart-product {
-  flex-direction: row;
-  justify-content: start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cart-product h3 {
@@ -657,6 +665,7 @@ main section {
   width: 100%;
   margin: 10px 0;
   gap: 0.5rem;
+  max-width: 440px;
 }
 
 .similar-product {
@@ -733,6 +742,10 @@ main section {
   font-weight: bold;
 }
 
+.secondary-pic {
+  max-width: 160px;
+}
+
 @media only screen and (max-width: 525px) {
   .product-btn {
     padding: 1rem 2rem;
@@ -794,5 +807,9 @@ main section {
   }
   #delivery-form {
     flex-direction: column;
+  }
+  .cart-product {
+    flex-direction: row;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
