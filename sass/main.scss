@@ -272,6 +272,7 @@ main section{
 
 
 #nav-icons{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -729,6 +730,10 @@ main section{
     #nav-menu {
         flex-direction: row;
         margin: 0 auto;
+    }
+
+    #nav-icons {
+        display: block;    
     }
 
     #contact {
