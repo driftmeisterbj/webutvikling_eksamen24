@@ -14,6 +14,27 @@
   grid-column: 1/2;
   grid-row: 2/3;
 }
+#main-grid main #product-pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+#main-grid main #product-pictures #product-main-pic {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+#main-grid main #product-pictures #product-secondary-pic-1 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+#main-grid main #product-pictures #product-secondary-pic-2 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+#main-grid main #product-pictures #product-secondary-pic-3 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
 #main-grid main .form-table-payment {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -88,27 +109,6 @@
   #main-grid main {
     grid-column: 1/4;
     grid-row: 2/3;
-  }
-  #main-grid main #product-pictures {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-  }
-  #main-grid main #product-pictures #product-main-pic {
-    grid-column: 1/4;
-    grid-row: 1/4;
-  }
-  #main-grid main #product-pictures #product-secondary-pic-1 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-  #main-grid main #product-pictures #product-secondary-pic-2 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-  }
-  #main-grid main #product-pictures #product-secondary-pic-3 {
-    grid-column: 3/4;
-    grid-row: 4/5;
   }
   #main-grid main .form-table {
     display: grid;
@@ -213,6 +213,14 @@ header a {
 header li {
   list-style: none;
   margin: 5px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 footer {
@@ -420,6 +428,13 @@ main section {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+#product-pictures {
+  width: 100%;
+  margin: 0;
+  gap: 0.2rem;
+  max-width: 568px;
 }
 
 #product-main-pic {
@@ -724,6 +739,9 @@ main section {
   }
 }
 @media only screen and (min-width: 680px) {
+  main {
+    margin: 0;
+  }
   #search-area {
     width: auto;
     max-width: 200px;

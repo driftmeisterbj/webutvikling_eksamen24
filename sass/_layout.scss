@@ -16,6 +16,28 @@
     main {
         @include grid-placement("1/2", "2/3");
 
+        #product-pictures {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+
+            #product-main-pic {
+                @include grid-placement("1/4", "1/4");
+            }
+
+            #product-secondary-pic-1{
+                @include grid-placement("1/2", "4/5");
+            }
+
+            #product-secondary-pic-2{
+                @include grid-placement("2/3", "4/5");
+            }
+
+            #product-secondary-pic-3{
+                @include grid-placement("3/4", "4/5");
+            }
+        }
+
         .form-table-payment {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -90,28 +112,6 @@
 
         main {
             @include grid-placement("1/4", "2/3");
-
-            #product-pictures {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: auto auto auto auto;
-
-                #product-main-pic {
-                    @include grid-placement("1/4", "1/4");
-                }
-
-                #product-secondary-pic-1{
-                    @include grid-placement("1/2", "4/5");
-                }
-
-                #product-secondary-pic-2{
-                    @include grid-placement("2/3", "4/5");
-                }
-
-                #product-secondary-pic-3{
-                    @include grid-placement("3/4", "4/5");
-                }
-            }
 
             .form-table {
                 display: grid;

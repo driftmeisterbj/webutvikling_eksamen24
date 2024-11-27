@@ -46,6 +46,14 @@ header li{
     margin: 5px;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -266,6 +274,13 @@ main section{
     flex-wrap: wrap;
 
     gap: 0.5rem;
+}
+
+#product-pictures {
+    width: 100%;
+    margin: 0;
+    gap: 0.2rem;
+    max-width: 568px;
 }
 
 #product-main-pic {
@@ -582,6 +597,10 @@ main section{
 }
 
 @media only screen and (min-width: 680px) {
+    main {
+        margin: 0;
+    }
+
     #search-area {
         width: auto;
         max-width: 200px;
