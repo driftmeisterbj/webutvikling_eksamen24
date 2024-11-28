@@ -570,7 +570,6 @@ main section{
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    aspect-ratio: 5/3;
     border-radius: 5%;
     
     img {
@@ -910,6 +909,11 @@ main section{
         }
     }
 
+    .category-container{
+        img {
+            height: 100%;
+        }
+    }
 }
 
 @media only screen and (min-width: 730px)   {
