@@ -186,11 +186,15 @@ main section{
 
 
 #similar-products-display{
-    margin: 20px;
+    width: 100%;
 
     a {
         text-decoration: none;
     }
+}
+
+#similar-products-display .product-container{
+    min-width: 350px;
 }
 
 #information-page {
@@ -558,8 +562,9 @@ main section{
 .review-container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     max-width: 289px;
+    min-width: 289px;
+    max-height: 594px;
     gap: 1rem;
 
     img{
@@ -742,6 +747,14 @@ main section{
     } 
 }
 
+.scroll-area {
+    display: flex;
+    flex-direction: row;
+    /* https://stackoverflow.com/questions/9707397/making-a-div-vertically-scrollable-using-css */
+    overflow-x: auto;
+    gap: 4rem;
+}
+
 @media only screen and (max-width: 525px) {
     .product-btn{
         padding: 1rem 2rem;
@@ -791,6 +804,7 @@ main section{
     #reviews {
         flex-direction: row;
         gap: 0.5rem;
+        width: 100%;
     }
 
     #product-pictures {
