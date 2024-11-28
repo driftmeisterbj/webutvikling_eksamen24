@@ -259,14 +259,33 @@ main section{
     p {
         font-weight: normal;
     }
+}
 
-    .top-right {
-        /* https://www.geeksforgeeks.org/how-to-position-a-fixed-element-in-the-top-right-corner-using-css/ */
-        position: absolute;
-        width: 70px;
-        top: 0;
-        right: 0;
-        margin: 0;
+.top-right {
+    /* https://www.geeksforgeeks.org/how-to-position-a-fixed-element-in-the-top-right-corner-using-css/ */
+    position: absolute;
+    width: 70px;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    font-size: 28px;
+    color: rgb(255, 248, 248);
+    border: none;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #6d6c6c;
+    text-decoration: none;
+
+    i {     
+        font-size: 28px;
+        text-align: center; 
     }
 }
 
@@ -513,9 +532,14 @@ main section{
     color: #000;
 
     picture{
-        display: block;
+        display: inline-block;
+        position: relative;
         max-width: 350px;
         max-height: 450px;
+
+        a {
+            margin: 0;
+        }
     }
 
     img {
@@ -538,12 +562,12 @@ main section{
         
     }
 
-    h4 {
+    p {
         text-align: end;
         max-width: fit-content;
     }
 
-    h3, h4 {
+    h3, p {
         margin: 0;
         padding: 0;
         font-size: 1rem;
@@ -551,11 +575,6 @@ main section{
 
     ul li {
         font-size: 1rem;
-    }
-
-    img {
-        
-
     }
 }
 
@@ -927,10 +946,6 @@ main section{
         justify-content: center; 
     }
 
-    .cart-product {
-        flex-direction: row;
-        width: 100%;
-    }
 
     .cart-product .cart-info {
         align-self: center;
@@ -956,6 +971,12 @@ main section{
             height: 100%;
         }
     }
+
+    .favorite-btn:hover {
+        background-color: #fff;
+        border-color: #fff;
+        color: #000;
+    }
 }
 
 @media only screen and (min-width: 730px)   {
@@ -973,6 +994,17 @@ main section{
 @media only screen and (min-width: 760px){
     #nav-menu ul {
         gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 858px){
+    .cart-product {
+        flex-direction: row;
+        width: 100%;
+
+        picture {
+            max-width: 40%;
+        }
     }
 }
 
