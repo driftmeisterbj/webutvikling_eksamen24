@@ -881,6 +881,7 @@ main section {
   /* https://stackoverflow.com/questions/9707397/making-a-div-vertically-scrollable-using-css */
   overflow-x: auto;
   gap: 4rem;
+  max-width: 90vw;
 }
 
 @media only screen and (max-width: 525px) {
@@ -916,11 +917,6 @@ main section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  #reviews {
-    flex-direction: row;
-    gap: 0.5rem;
-    width: 100%;
   }
   #product-pictures {
     width: 40%;
@@ -981,5 +977,8 @@ main section {
   }
   .product-reviews ul li {
     font-size: 1rem;
+  }
+  .scroll-area {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
