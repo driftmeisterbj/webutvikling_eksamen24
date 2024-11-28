@@ -260,6 +260,31 @@
     grid-column: 1/4;
     grid-row: 4/5;
     display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  #main-grid footer #footer-start {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  #main-grid footer #contact {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #main-grid footer #shortcuts {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #main-grid footer #social-media {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
+@media only screen and (min-width: 680px) and (min-width: 841px) {
+  #main-grid footer {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
   }
@@ -278,6 +303,9 @@
   #main-grid footer #social-media {
     grid-column: 3/4;
     grid-row: 2/3;
+  }
+  #main-grid footer #shortcuts {
+    align-content: center;
   }
 }
 @media only screen and (min-width: 680px) and (min-width: 900px) {
@@ -494,6 +522,10 @@ main section {
 
 #similar-products-display {
   width: 100%;
+  align-items: center;
+}
+#similar-products-display h3 {
+  font-size: 28px;
 }
 #similar-products-display a {
   text-decoration: none;
@@ -791,6 +823,15 @@ main section {
   text-decoration: none;
   color: #000;
 }
+.product-container h3, .cart-product h3 {
+  text-align: left;
+  max-width: 60%;
+}
+.product-container p, .cart-product p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .product-container picture, .cart-product picture {
   display: inline-block;
   position: relative;
@@ -970,29 +1011,6 @@ main section {
   flex-grow: 1;
 }
 
-.similar-product {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.similar-product img {
-  max-width: 450px;
-  min-width: 200px;
-  height: auto;
-  width: 100%;
-}
-
-.similar-product h2 {
-  width: 50%;
-}
-
-.similar-product p {
-  width: 50%;
-  align-content: center;
-  text-align: end;
-}
-
 .form-table, .form-table-payment, .form-table-extra {
   display: flex;
   flex-wrap: wrap;
@@ -1115,9 +1133,6 @@ main section {
   }
   #contact {
     align-content: flex-start;
-  }
-  #shortcuts {
-    align-content: center;
   }
   #social-media {
     align-content: end;

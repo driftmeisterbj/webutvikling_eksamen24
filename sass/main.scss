@@ -210,6 +210,12 @@ main section{
 
 #similar-products-display{
     width: 100%;
+    align-items: center;
+
+    h3 {
+        font-size: 28px;
+    }
+
 
     a {
         text-decoration: none;
@@ -531,6 +537,17 @@ main section{
     text-decoration: none;
     color: #000;
 
+    h3 {
+        text-align: left;
+        max-width: 60%;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
     picture{
         display: inline-block;
         position: relative;
@@ -724,28 +741,6 @@ main section{
     }
 }
 
-.similar-product{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.similar-product img{
-    max-width: 450px;
-    min-width: 200px;
-    height: auto;
-    width: 100%;
-}
-
-.similar-product h2{
-    width: 50%;
-}
-
-.similar-product p {
-    width: 50%;
-    align-content: center;
-    text-align: end;
-}
 
 .form-table, .form-table-payment, .form-table-extra{
     display: flex;
@@ -890,10 +885,6 @@ main section{
 
     #contact {
         align-content: flex-start;
-    }
-
-    #shortcuts {
-       align-content: center;
     }
 
     #social-media {
