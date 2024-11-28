@@ -148,7 +148,7 @@ main section{
 
 #shortcuts{  
     display: flex; 
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
@@ -234,7 +234,7 @@ main section{
     }
 
     h2 {
-        text-align: start;
+        text-align: flex-start;
     }
     
     .gray-text {
@@ -414,7 +414,7 @@ main section{
 
 #payment-section {
     h2 {
-        text-align: start;
+        text-align: flex-start;
     }
 
     h3 {
@@ -515,7 +515,7 @@ main section{
     width: 100%;
     justify-content: space-between;
     h3 {
-        text-align: start;
+        text-align: flex-start;
         
     }
 
@@ -570,9 +570,7 @@ main section{
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-    background-size: cover;
     aspect-ratio: 5/3;
-    object-fit: cover;
     border-radius: 5%;
     
     img {
@@ -580,14 +578,15 @@ main section{
         object-fit: cover;
         max-width: 100%;
         border-radius: 5%;
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur */
+        filter: blur(2px);
     }
 
     h3 {
         position: absolute;
-        text-align: center;
-        border: 1px solid rgb(51, 51, 51);
-        padding: 5px;
-        background-color: rgb(51, 51, 51);
+        font-size: 34px;
+        margin: 0;
+        font-weight: 600;
     }
 }
 
@@ -833,7 +832,7 @@ main section{
     }
 
     #contact {
-        align-content: start;
+        align-content: flex-start;
     }
 
     #shortcuts {
@@ -873,7 +872,7 @@ main section{
     }
 
     .product-sort {
-        justify-content: start;
+        justify-content: flex-start;
         padding: 5px;
         gap: 1rem;
         width: 100%;
