@@ -4,7 +4,7 @@
 
 body{
     font-family: $mainFont;
-    margin: 0px 10px;
+    margin: 0 15px;
 }
 
 h2 {
@@ -45,6 +45,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 footer{
@@ -67,6 +71,10 @@ main section{
 }
 
 #main-checkout {
+    h1 {
+        text-align: center;
+    }
+
     h2 {
         font-size: 28px;
     }
@@ -227,7 +235,11 @@ main section{
         margin: 0 1rem 2rem;
     }
 
-    h4 {
+    h2 {
+        text-align: start;
+    }
+    
+    .gray-text {
         font-weight: bold;
         margin: 10px 0;
         color: rgb(97, 95, 95);
@@ -237,12 +249,13 @@ main section{
         font-weight: normal;
     }
 
-    h5 {
+    .top-right {
         /* https://www.geeksforgeeks.org/how-to-position-a-fixed-element-in-the-top-right-corner-using-css/ */
         position: absolute;
         width: 70px;
         top: 0;
         right: 0;
+        margin: 0;
     }
 }
 
@@ -378,7 +391,7 @@ main section{
     align-items: center;
     display: flex;
     flex-direction: row;
-
+    gap: 3rem;
     max-width: 95%;
 
     h2 {
@@ -391,6 +404,16 @@ main section{
     flex-wrap: wrap;
     width: 100%;
     gap: 0.3rem;
+}
+
+#payment-section {
+    h2 {
+        text-align: start;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
 }
 
 .bold-text {
@@ -434,7 +457,6 @@ main section{
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
-
 }
 
 .product-btn {
@@ -445,7 +467,6 @@ main section{
     padding: 0.5rem 1.5rem;
     border-style: solid;
     border-width: 0.5px;
-    max-width: 30%;
     text-align: center;
     border-radius: 31px;
     border-color: #8f8585;
@@ -513,14 +534,24 @@ main section{
     align-items: left;
     
     input {
-        max-width: 33px;
+        max-width: 40px;
         padding: 5px;
     }
 }
 
-
 .cart-product h3 {
     margin: 10px 0 0;
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+
+    p {
+        margin: 1px 0;
+    }
 }
 
 .category-container{
@@ -876,6 +907,7 @@ main section{
     .cart-product .cart-info {
         align-self: center;
     }
+
 
     .shoppingbag-icons {
         flex-direction: column;

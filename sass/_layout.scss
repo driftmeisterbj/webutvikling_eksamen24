@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    gap: 1rem;
+    gap: 3rem;
 
     header {
         @include grid-placement("1/2", "1/2");
@@ -43,7 +43,7 @@
         .form-table-payment {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(7, auto);
+            grid-template-rows: repeat(8, auto);
 
             #ftp-id-1 {
                 @include grid-placement("1/3", "1/2");
@@ -54,27 +54,27 @@
             }
 
             #ftp-id-3 {
-                @include grid-placement("1/2", "3/4");
+                @include grid-placement("1/3", "3/4");
             }
 
             #ftp-id-4 {
-                @include grid-placement("2/3", "3/4");
-            }
-
-            #ftp-id-5 {
                 @include grid-placement("1/3", "4/5");
             }
 
-            #ftp-id-6 {
+            #ftp-id-5 {
                 @include grid-placement("1/3", "5/6");
             }
 
-            #ftp-id-7 {
+            #ftp-id-6 {
                 @include grid-placement("1/3", "6/7");
             }
 
-            #ftp-id-8 {
+            #ftp-id-7 {
                 @include grid-placement("1/3", "7/8");
+            }
+
+            #ftp-id-8 {
+                @include grid-placement("1/3", "8/9");
             }
         }
     }
@@ -148,6 +148,44 @@
 
                 #form-id-5 {
                     @include grid-placement("2/3", "4/5");
+                }
+            }
+
+            .form-table-payment {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(7, auto);
+    
+                #ftp-id-1 {
+                    @include grid-placement("1/3", "1/2");
+                }
+    
+                #ftp-id-2 {
+                    @include grid-placement("1/3", "2/3");
+                }
+    
+                #ftp-id-3 {
+                    @include grid-placement("1/2", "3/4");
+                }
+    
+                #ftp-id-4 {
+                    @include grid-placement("2/3", "3/4");
+                }
+    
+                #ftp-id-5 {
+                    @include grid-placement("1/3", "4/5");
+                }
+    
+                #ftp-id-6 {
+                    @include grid-placement("1/3", "5/6");
+                }
+    
+                #ftp-id-7 {
+                    @include grid-placement("1/3", "6/7");
+                }
+    
+                #ftp-id-8 {
+                    @include grid-placement("1/3", "7/8");
                 }
             }
         }
