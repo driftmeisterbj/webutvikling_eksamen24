@@ -81,8 +81,20 @@ main section{
 }
 
 #logo {
-    font-size: 2rem;
-    font-weight: bold;
+    img {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+        height: 70px;
+        width: 70px;
+        justify-self: center;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+        border-radius: 100%;
+    }
+    
 }
 
 #banner {
@@ -105,6 +117,7 @@ main section{
     background-color: rgb(247, 247, 247);
     padding: 1rem;
 }
+
 
 #popular-products, #popular-categories, #reviews, #similar-products-display{
     gap: 1rem;
@@ -299,22 +312,28 @@ main section{
     align-items: center;
     text-align: center;
     padding: 0;
-    gap: 0.5rem;
     margin: 0;
 
     ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
+        gap: 1rem;
     }
     
     li{
+        height: 100%;
         list-style: none;
-        margin: 15px;
     }
+
+    li a {
+        padding: 0.5rem;
+    }
+
+    
 }
 
-#nav-menu a {
-    padding: 6px;
-}
 
 
 #nav-icons{
@@ -474,7 +493,7 @@ main section{
     border-style: solid;
     border-width: 0.5px;
     text-align: center;
-    border-radius: 31px;
+    border-radius: 33px;
     border-color: #8f8585;
 }
 
@@ -504,7 +523,7 @@ main section{
         width: 100%;
         max-width: 350px;
         max-height: 450px;
-        height: auto;
+        height: 100%;
         border-radius: 15px;
     }
 }
@@ -532,6 +551,11 @@ main section{
 
     ul li {
         font-size: 1rem;
+    }
+
+    img {
+        
+
     }
 }
 
@@ -616,6 +640,11 @@ main section{
         width: 150px;
         /*https://stackoverflow.com/questions/2623603/crop-an-image-instead-of-stretching-it*/
         object-fit: cover;
+        align-self: center;
+    }
+
+    p {
+        text-align: left;
     }
 }
 
@@ -810,8 +839,18 @@ main section{
     }
 
     #nav-menu {
+        justify-self: center;
+        align-self: center;
+    }
+
+    #nav-menu ul {
         flex-direction: row;
-        margin: 0 auto;
+        width: 100%;
+        gap: 0;
+
+        li a {
+            padding: 1rem 0;
+        }
     }
     
     main {
@@ -871,10 +910,13 @@ main section{
     }
 
     .product-sort {
-        justify-content: flex-start;
         padding: 5px;
         gap: 1rem;
         width: 100%;
+
+        a {
+            width: 80px;
+        }
     }
 
     #delivery-form{
@@ -917,12 +959,6 @@ main section{
 }
 
 @media only screen and (min-width: 730px)   {
-    #nav-menu ul li{
-        display: inline-block;
-        margin: auto;
-        gap: 6px;
-    }
-
     .product-reviews {
         ul li {
             font-size: 1rem;
@@ -931,5 +967,21 @@ main section{
 
     .scroll-area {
         max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 760px){
+    #nav-menu ul {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    #nav-menu ul {
+        gap: 0;
+
+        li a{
+            padding: 1rem;
+        }
     }
 }

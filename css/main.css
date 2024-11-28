@@ -376,9 +376,18 @@ main section {
   font-size: 28px;
 }
 
-#logo {
+#logo img {
+  display: inline-block;
   font-size: 2rem;
   font-weight: bold;
+  height: 70px;
+  width: 70px;
+  justify-self: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 100%;
 }
 
 #banner {
@@ -578,19 +587,21 @@ main section {
   align-items: center;
   text-align: center;
   padding: 0;
-  gap: 0.5rem;
   margin: 0;
 }
 #nav-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
+  gap: 1rem;
 }
 #nav-menu li {
+  height: 100%;
   list-style: none;
-  margin: 15px;
 }
-
-#nav-menu a {
-  padding: 6px;
+#nav-menu li a {
+  padding: 0.5rem;
 }
 
 #nav-icons {
@@ -743,7 +754,7 @@ main section {
   border-style: solid;
   border-width: 0.5px;
   text-align: center;
-  border-radius: 31px;
+  border-radius: 33px;
   border-color: #8f8585;
 }
 
@@ -772,7 +783,7 @@ main section {
   width: 100%;
   max-width: 350px;
   max-height: 450px;
-  height: auto;
+  height: 100%;
   border-radius: 15px;
 }
 
@@ -798,7 +809,6 @@ main section {
 .product-container ul li {
   font-size: 1rem;
 }
-
 .cart-product {
   flex-direction: column;
   align-items: left;
@@ -877,6 +887,10 @@ main section {
   /*https://stackoverflow.com/questions/2623603/crop-an-image-instead-of-stretching-it*/
   -o-object-fit: cover;
      object-fit: cover;
+  align-self: center;
+}
+.review-container p {
+  text-align: left;
 }
 
 .contact-line {
@@ -1054,8 +1068,16 @@ main section {
     margin: 0 auto;
   }
   #nav-menu {
+    justify-self: center;
+    align-self: center;
+  }
+  #nav-menu ul {
     flex-direction: row;
-    margin: 0 auto;
+    width: 100%;
+    gap: 0;
+  }
+  #nav-menu ul li a {
+    padding: 1rem 0;
   }
   main {
     margin: 0;
@@ -1099,10 +1121,12 @@ main section {
     flex-direction: row;
   }
   .product-sort {
-    justify-content: flex-start;
     padding: 5px;
     gap: 1rem;
     width: 100%;
+  }
+  .product-sort a {
+    width: 80px;
   }
   #delivery-form {
     flex-direction: column;
@@ -1131,15 +1155,23 @@ main section {
   }
 }
 @media only screen and (min-width: 730px) {
-  #nav-menu ul li {
-    display: inline-block;
-    margin: auto;
-    gap: 6px;
-  }
   .product-reviews ul li {
     font-size: 1rem;
   }
   .scroll-area {
     max-width: 100%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  #nav-menu ul {
+    gap: 1rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #nav-menu ul {
+    gap: 0;
+  }
+  #nav-menu ul li a {
+    padding: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
