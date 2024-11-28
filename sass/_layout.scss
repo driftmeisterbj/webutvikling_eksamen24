@@ -45,9 +45,11 @@
         #product-pictures {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto auto auto auto;
-            max-width: 480px;
-            margin: 0 auto;
+            grid-template-rows: auto auto auto;
+            gap: 1rem;
+
+            max-height: 550px;
+            
 
             #product-main-pic {
                 @include grid-placement("2/4", "1/4");
