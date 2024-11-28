@@ -20,7 +20,7 @@ h4 {
 }
 
 h5 {
-    font-size: 19px;
+    font-size: 17px;
     margin: 0;
     padding: 0;
     font-weight: normal;
@@ -64,6 +64,12 @@ address {
 
 main section{
     margin-bottom: 2.5rem;
+}
+
+#main-checkout {
+    h2 {
+        font-size: 28px;
+    }
 }
 
 #logo {
@@ -201,13 +207,27 @@ main section{
     }
 
     form ul li {
+        position: relative;
         font-weight: bold;
         margin: 0 1rem 2rem;
     }
 
+    h4 {
+        font-weight: bold;
+        margin: 10px 0;
+        color: rgb(97, 95, 95);
+    }
+
     p {
         font-weight: normal;
-        color: gray;
+    }
+
+    h5 {
+        /* https://www.geeksforgeeks.org/how-to-position-a-fixed-element-in-the-top-right-corner-using-css/ */
+        position: absolute;
+        width: 70px;
+        top: 0;
+        right: 0;
     }
 }
 
@@ -298,7 +318,8 @@ main section{
 }
 
 #nav-icons li a {
-    padding: 4px;
+    padding: 10px;
+    font-size: 20px;
 }
 
 #reviews {
@@ -713,9 +734,9 @@ main section{
 }
 
 @media only screen and (min-width: 680px) {
-    header ul li{
-        display: inline-block;
-        margin: auto
+    #nav-menu {
+        flex-direction: row;
+        margin: 0 auto;
     }
     
     main {
@@ -727,14 +748,11 @@ main section{
         max-width: 200px;
     }
 
-    #nav-menu {
-        flex-direction: row;
-        margin: 0 auto;
-    }
-
     #nav-icons {
-        display: block;
-        text-align: center;    
+        ul li {
+            display: inline-block;
+            
+        }
     }
 
     #contact {
@@ -816,4 +834,12 @@ main section{
         flex-direction: column;
     }
 
+}
+
+@media only screen and (min-width: 730px)   {
+    #nav-menu ul li{
+        display: inline-block;
+        margin: auto;
+        gap: 6px;
+    }
 }
