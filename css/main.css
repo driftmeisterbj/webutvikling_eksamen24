@@ -814,7 +814,6 @@ main section {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-  /* https://stackoverflow.com/questions/54927180/css-grid-square-layout */
 }
 
 #product-main-pic {
@@ -838,6 +837,26 @@ main section {
 }
 #shopping-cart h2 {
   width: 100%;
+}
+
+#product-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  gap: 0.5rem;
+  max-width: 440px;
+  width: 100%;
+  align-self: center;
+}
+#product-info h2, #product-info a, #product-info p {
+  width: 100%;
+}
+#product-info h2 {
+  text-align: left;
+}
+#product-info .btn {
+  flex-grow: 1;
 }
 
 #product-info-buttons {
@@ -1101,26 +1120,6 @@ main section {
   text-decoration: none;
   color: #000;
   font-size: 20px;
-}
-
-#product-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0;
-  gap: 0.5rem;
-  max-width: 440px;
-  width: 100%;
-  align-self: center;
-}
-#product-info h2, #product-info a, #product-info p {
-  width: 100%;
-}
-#product-info h2 {
-  text-align: left;
-}
-#product-info .btn {
-  flex-grow: 1;
 }
 
 .form-table, .form-table-payment, .form-table-extra {

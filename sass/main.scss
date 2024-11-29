@@ -571,9 +571,7 @@ main section{
             height: 100%;
             width: 100%;
             object-fit:cover;
-            display: block;
-            /* https://stackoverflow.com/questions/54927180/css-grid-square-layout */
-            
+            display: block; 
         }
     }
 }
@@ -598,6 +596,29 @@ main section{
 
     h2 {
         width: 100%;
+    }
+}
+
+#product-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 0.5rem;
+    max-width: 440px;
+    width: 100%;
+    align-self: center;
+
+    h2, a, p {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .btn {
+        flex-grow: 1;
     }
 }
 
@@ -882,30 +903,6 @@ main section{
     font-size: 20px;
 }
 
-#product-info{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    gap: 0.5rem;
-    max-width: 440px;
-    width: 100%;
-    align-self: center;
-
-    h2, a, p {
-        width: 100%;
-    }
-
-    h2 {
-        text-align: left;
-    }
-
-    .btn {
-        flex-grow: 1;
-    }
-}
-
-
 .form-table, .form-table-payment, .form-table-extra{
     display: flex;
     flex-wrap: wrap;
@@ -1003,9 +1000,6 @@ main section{
     max-width: 90vw; 
 }
 
-@media only screen and (max-width: 525px) {
-    
-}
 
 @media only screen and (min-width: 680px) {
     body{
