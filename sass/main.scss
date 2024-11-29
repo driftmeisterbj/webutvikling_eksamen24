@@ -1013,15 +1013,6 @@ main section{
         margin-left: 40px;
     }
 
-    #banner{
-        display: none;
-    }
-
-    #banner-slider{
-        display: flex;
-    }
-
-
     .flex-space{
         flex-direction: row;
     }
@@ -1086,6 +1077,14 @@ main section{
 
     .scroll-area {
         max-width: 100%;
+    }
+
+    #banner{
+        display: none;
+    }
+
+    #banner-slider{
+        display: flex;
     }
 }
 

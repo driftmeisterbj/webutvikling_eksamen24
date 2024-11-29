@@ -1239,12 +1239,6 @@ main section {
     margin: 0;
     margin-left: 40px;
   }
-  #banner {
-    display: none;
-  }
-  #banner-slider {
-    display: flex;
-  }
   .flex-space {
     flex-direction: row;
   }
@@ -1289,6 +1283,12 @@ main section {
   }
   .scroll-area {
     max-width: 100%;
+  }
+  #banner {
+    display: none;
+  }
+  #banner-slider {
+    display: flex;
   }
 }
 @media only screen and (min-width: 760px) {
