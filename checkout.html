@@ -145,33 +145,33 @@
                 <form class="form-table">
                     <label for="firstname" id="form-id-1">
                         Leveringsadresse<br>Fornavn
-                        <input id="firstname" placeholder="Ola*">
+                        <input id="firstname" placeholder="Ola*" autocomplete="given-name">
                     </label>
                     <label for="lastname" id="form-id-2">
                         Etternavn
-                        <input id="lastname" placeholder="Nordmann*">
+                        <input id="lastname" placeholder="Nordmann*" autocomplete="family-name">
                     </label>
-                    <label for="adress" id="form-id-3">
+                    <label for="street-address" id="form-id-3">
                         Gateadresse
-                        <input id="adress" placeholder="Testveien 123*">
+                        <input id="street-address" placeholder="Testveien 123*">
                     </label>
                     <label for="postalnumber" id="form-id-4">
                         Postnummer
-                        <input id="postalnumber" placeholder="1337*">
+                        <input id="postalnumber" placeholder="1337*" autocomplete="postal-code">
                     </label>
                     <label for="postalarea" id="form-id-5">
                         Poststed
-                        <input id="postalarea" placeholder="Halden*">
+                        <input id="postalarea" placeholder="Halden*" autocomplete="address-level1">
                     </label>
                 </form>
                 <form class="form-table-extra">
                     <label for="email">
                         Kontaktinformasjon<br>E-post
-                        <input id="email" placeholder="eksempel@gmail.com*">
+                        <input id="email" placeholder="eksempel@gmail.com*" autocomplete="email">
                     </label>
                     <label for="phone">
                         Telefon
-                        <input id="phone" placeholder="+4700****00*">
+                        <input id="phone" placeholder="+4700****00*" autocomplete="tel">
                     </label>
                 </form>
                 <a href="#" class="btn">Lagre</a>
@@ -226,7 +226,7 @@
                     </label>
                     <label for="card-code"  id="ftp-id-4">
                         CVC/CVV
-                        <input id="card-code" placeholder="CVC/CVV">
+                        <input id="card-code" placeholder="CVC/CVV" autocomplete="cc-csc">
                     </label>
                 <h4 id="ftp-id-5">Å betale inkl. mva.</h4>
                 <p id="ftp-id-6">1199 kr</p>
