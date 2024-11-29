@@ -20,24 +20,28 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto auto auto;
             gap: 1rem;
-
+            box-sizing: border-box;
             max-height: 550px;
-            
 
             #product-main-pic {
                 @include grid-placement("2/4", "1/4");
+                /* https://stackoverflow.com/questions/43311943/prevent-content-from-expanding-grid-items */
+                overflow: hidden;
             }
 
             #product-secondary-pic-1{
                 @include grid-placement("1/2", "1/2");
+                overflow: hidden;
             }
 
             #product-secondary-pic-2{
                 @include grid-placement("1/2", "2/3");
+                overflow: hidden;
             }
 
             #product-secondary-pic-3{
                 @include grid-placement("1/2", "3/4");
+                overflow: hidden;
             }
         }
 
