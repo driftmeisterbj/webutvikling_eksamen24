@@ -404,7 +404,18 @@ main section {
   font-size: 28px;
 }
 
-#logo img {
+#footer-start a {
+  display: flex;
+  justify-content: center;
+}
+#footer-start hr {
+  margin-bottom: 30px;
+}
+#footer-start h4 {
+  margin: 10px 0;
+}
+
+.logo img {
   display: inline-block;
   font-size: 2rem;
   font-weight: bold;
@@ -906,13 +917,11 @@ main section {
   align-items: center;
   justify-content: flex-end;
 }
-.product-container picture, .cart-product picture {
+.product-container figure, .cart-product figure {
   display: inline-block;
   position: relative;
   max-width: 350px;
   max-height: 450px;
-}
-.product-container picture a, .cart-product picture a {
   margin: 0;
 }
 .product-container img, .cart-product img {
