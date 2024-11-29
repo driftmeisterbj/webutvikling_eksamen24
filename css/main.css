@@ -899,51 +899,27 @@ main section {
   background-color: #2e2c2c;
 }
 
-.product-container, .cart-product {
+.product-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
   gap: 1rem;
-  text-decoration: none;
-  color: #000;
-}
-.product-container h3, .cart-product h3 {
-  text-align: left;
-  max-width: 60%;
-}
-.product-container p, .cart-product p {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.product-container figure, .cart-product figure {
-  display: inline-block;
-  position: relative;
-  max-width: 350px;
-  max-height: 450px;
-  margin: 0;
-}
-.product-container img, .cart-product img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  max-width: 350px;
-  max-height: 450px;
-  height: 100%;
-  border-radius: 15px;
-}
-
-.product-container {
   margin: 0 auto;
   max-width: 350px;
   width: 100%;
   justify-content: space-between;
+  text-decoration: none;
+  color: #000;
 }
 .product-container h3 {
   text-align: flex-start;
+  max-width: 60%;
 }
 .product-container p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   text-align: end;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -953,19 +929,52 @@ main section {
   padding: 0;
   font-size: 1rem;
 }
+.product-container figure {
+  display: inline-block;
+  position: relative;
+  max-width: 350px;
+  max-height: 450px;
+  margin: 0;
+}
+.product-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 350px;
+  max-height: 450px;
+  height: 100%;
+  border-radius: 15px;
+}
 .product-container ul li {
   font-size: 1rem;
 }
 
 .cart-product {
+  display: flex;
   flex-direction: column;
   align-items: left;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 1rem;
+}
+.cart-product picture {
+  display: block;
+  max-width: 350px;
+  max-height: 450px;
+}
+.cart-product img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  max-width: 350px;
+  max-height: 450px;
+  height: 100%;
+  border-radius: 15px;
 }
 .cart-product input {
   max-width: 40px;
   padding: 5px;
 }
-
 .cart-product h3 {
   margin: 10px 0 0;
 }
