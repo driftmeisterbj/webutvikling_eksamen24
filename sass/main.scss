@@ -32,6 +32,7 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 15px;
 }
 
 header a{
@@ -221,7 +222,7 @@ main section{
     }
 }
 
-#popular-products, #popular-categories, #reviews, #similar-products-display{
+#popular-products, #popular-categories, #similar-products-display{
     gap: 1rem;
     
     h2{
@@ -238,6 +239,31 @@ main section{
     width: 100%;
 
     text-align: center;
+}
+
+#reviews {
+    gap: 1rem;
+    
+    h2{
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 2rem;
+        font-size: 32px;
+    }
+    p {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    width: 100%;
+
+    ul {
+        margin: 0;
+
+        li {
+            font-size: 18px;
+        }
+    }
 }
 
 #popular-products {
@@ -443,27 +469,28 @@ main section{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        gap: 1rem;
-    }
+    #nav-menu-left, #nav-menu-right{
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 1rem;
+        }
+        
+        ul{
+            height: 100%;
+            list-style: none;
+        }
     
-    li{
-        height: 100%;
-        list-style: none;
+        li a {
+            padding: 0.5rem;
+        }
     }
-
-    li a {
-        padding: 0.5rem;
-    }
-
-    
 }
 
 
@@ -788,11 +815,11 @@ main section{
         width: 150px;
         /*https://stackoverflow.com/questions/2623603/crop-an-image-instead-of-stretching-it*/
         object-fit: cover;
-        align-self: center;
     }
 
     p {
         text-align: left;
+        padding-bottom: 15px;
     }
 }
 
@@ -1102,9 +1129,30 @@ main section{
 }
 
 @media only screen and (min-width: 760px){
-    #nav-menu ul {
-        gap: 1rem;
+    #nav-menu {
+        flex-direction: row;
+        width: 100%;
+        #nav-menu-left, #nav-menu-right{
+            ul {
+                flex-direction: row;
+            }
+            width: 40%;
+        }
+
+        #nav-menu-left {
+            ul {
+                justify-content: flex-end;
+            }
+        }
+
+        #nav-menu-right {
+            ul {
+                justify-content: flex-start;
+            }
+        }
     }
+
+    
 }
 
 @media only screen and (min-width: 858px){

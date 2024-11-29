@@ -336,6 +336,7 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 15px;
 }
 
 header a {
@@ -499,20 +500,41 @@ main section {
   right: 30%;
 }
 
-#popular-products, #popular-categories, #reviews, #similar-products-display {
+#popular-products, #popular-categories, #similar-products-display {
   gap: 1rem;
   width: 100%;
   text-align: center;
 }
-#popular-products h2, #popular-categories h2, #reviews h2, #similar-products-display h2 {
+#popular-products h2, #popular-categories h2, #similar-products-display h2 {
   width: 100%;
   margin-bottom: 5px;
   margin-top: 2rem;
   font-size: 32px;
 }
-#popular-products p, #popular-categories p, #reviews p, #similar-products-display p {
+#popular-products p, #popular-categories p, #similar-products-display p {
   margin-top: 0;
   width: 100%;
+}
+
+#reviews {
+  gap: 1rem;
+  width: 100%;
+}
+#reviews h2 {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 2rem;
+  font-size: 32px;
+}
+#reviews p {
+  margin-top: 0;
+  width: 100%;
+}
+#reviews ul {
+  margin: 0;
+}
+#reviews ul li {
+  font-size: 18px;
 }
 
 #popular-products {
@@ -701,21 +723,22 @@ main section {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
-#nav-menu ul {
+#nav-menu #nav-menu-left ul, #nav-menu #nav-menu-right ul {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   gap: 1rem;
 }
-#nav-menu li {
+#nav-menu #nav-menu-left ul, #nav-menu #nav-menu-right ul {
   height: 100%;
   list-style: none;
 }
-#nav-menu li a {
+#nav-menu #nav-menu-left li a, #nav-menu #nav-menu-right li a {
   padding: 0.5rem;
 }
 
@@ -1023,10 +1046,10 @@ main section {
   /*https://stackoverflow.com/questions/2623603/crop-an-image-instead-of-stretching-it*/
   -o-object-fit: cover;
      object-fit: cover;
-  align-self: center;
 }
 .review-container p {
   text-align: left;
+  padding-bottom: 15px;
 }
 
 .contact-line {
@@ -1280,8 +1303,21 @@ main section {
   }
 }
 @media only screen and (min-width: 760px) {
-  #nav-menu ul {
-    gap: 1rem;
+  #nav-menu {
+    flex-direction: row;
+    width: 100%;
+  }
+  #nav-menu #nav-menu-left, #nav-menu #nav-menu-right {
+    width: 40%;
+  }
+  #nav-menu #nav-menu-left ul, #nav-menu #nav-menu-right ul {
+    flex-direction: row;
+  }
+  #nav-menu #nav-menu-left ul {
+    justify-content: flex-end;
+  }
+  #nav-menu #nav-menu-right ul {
+    justify-content: flex-start;
   }
 }
 @media only screen and (min-width: 858px) {
